@@ -37,7 +37,13 @@ public class ContoCorrenteDaoImpl implements ContoCorrenteDao {
 			}
 		}
 	}
-
+/*
+ * La tracci adiceva che bisognava creare un metodo per modificare il contocorrente, non specificando se dovesse
+ * cambiare tutti i campi.
+ * io  ho implementato tutto , ma a mio avviso la data e il saldo non dovrebbero essere cambviati da qui in quanto 
+ * il saldo dovrebbe cambiare soltanto se viene fatto un prelievo o un versamento e la data di creazione del conto dovrebbe essere invariabile
+ * l'iban dovrebbe poter cambiare solo nel momento in cui si cambia filiale.
+ */
 	@Override
 	public ContoCorrente updateCc(ContoCorrente conto) {
 		ContoCorrente contoUpdated = new ContoCorrente();

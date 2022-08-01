@@ -3,6 +3,11 @@ package com;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+ * all'intenro di questa classe avrei creato aggiunto anche un parametro di tipo int numConto in quanto a mio avviso 
+ * dovendo essere un modello di un'entita' reale non esiste un conto corrente senza il numero di conto ad esso relativo
+ */
+		
 public class ContoCorrente {
 	private String date;
 	private String iban;
